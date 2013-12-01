@@ -21,7 +21,7 @@ public class ChangeOrientationPlugin extends CordovaPlugin {
         		}
         		return true;
             }else{
-            	callbackContext.error("Bir hata oluﬂtu!");
+            	callbackContext.error("Bir hata olustu!");
             	return false;
             }
         } catch(Exception e) {
