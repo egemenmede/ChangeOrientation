@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>ChangeOrientationPlugin</title>
+
+	  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="changeorientation.js"></script>
+	  <script type="text/javascript" charset="utf-8">
+      
+		var onDeviceReady = function() {
+		    console.log("BİLGİ: Uygulama Yüklendi.");
+		}
+		
+		function callChangeOrientationPlugin(setValue){ 
+			ChangeOrientation.setOrientation(null, null, setValue); 
+		}
+		
+		function init() {
+		    document.addEventListener("deviceready", onDeviceReady, true);
+		} 
+</script>  
+
+  </head>
+  <body onload="init();">
+    <button onclick="callChangeOrientationPlugin('portrait');">Portrait olarak kilitle</button>
+    <button onclick="callChangeOrientationPlugin('landscape');">Landscape olarak kilitle</button>
+  </body>
+</html>
