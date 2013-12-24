@@ -27,6 +27,22 @@ PLUGIN KURULUMU
 </feature>
 ```
 
+PLUGINI PHONEGAP/CORDOVA 3.x UYUMLU HALE GETİRME
+=================================
+`ChangeOrientationPlugin.java` dosyası içerisinde import edilen kütüphaneleri
+
+```
+import org.apache.cordova.api.CallbackContext;
+import org.apache.cordova.api.CordovaPlugin;
+```
+
+aşağıdakileri ile değiştirin.
+
+```
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+```
+
 Sorularınız için;
 
 http://www.delipenguen.com ve PhoneGap/Cordova Geliştiricileri Türkiye Topluluğu (https://plus.google.com/communities/117075673032309282055)
